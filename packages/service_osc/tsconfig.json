@@ -1,0 +1,13 @@
+{
+    "include": ["src"],
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../../tmp/builds/service_osc/build",
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+        },
+        "allowSyntheticDefaultImports": true
+    },
+    "references": []
+}

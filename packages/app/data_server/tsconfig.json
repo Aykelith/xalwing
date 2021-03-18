@@ -1,0 +1,15 @@
+{
+  "include": ["src"],
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../tmp/builds/app__data_server/build",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "references": [
+  ]
+}
+

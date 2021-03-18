@@ -1,0 +1,20 @@
+{
+  "include": ["src", "../../../scripts/webpack.config.ts"],
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "../../../tmp/builds/app__reactjs_web/build",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@xalwing/app/data_server": ["../data_server/src/index.ts"]
+    }
+  },
+  "references": [
+    {"path":"../data_server"}
+  ]
+}
+

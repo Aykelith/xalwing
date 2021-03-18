@@ -1,0 +1,23 @@
+{
+  "name": "@softprovider-remote-tasks/service_manager",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandru Prisacariu",
+  "license": "ISC",
+  "dependencies": {
+    "@aykelith/xalgenezis-expressjs": "^1.0.22",
+    "@aykelith/xalgenezis-expressjs-data": "^1.0.2",
+    "@aykelith/xalgenezis-generalerror": "^1.0.6",
+    "@aykelith/xalgenezis-mongodb": "^1.0.6",
+    "@aykelith/xalgenezis-server": "^1.0.4",
+    "axios": "^0.21.1",
+    "js-yaml": "^4.0.0",
+    "mongodb": "^3.6.4",
+    "regenerator-runtime": "^0.13.7",
+    "source-map-support": "^0.5.19"
+  }
+}

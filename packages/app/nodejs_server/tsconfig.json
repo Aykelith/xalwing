@@ -1,0 +1,17 @@
+{
+  "include": ["src"],
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../tmp/builds/app__nodejs_server/build",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@xalwing/app/data_server": ["../data_server/src/index.ts"]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "references": [
+    {"path":"../data_server"}
+  ]
+}
+

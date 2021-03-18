@@ -1,0 +1,8 @@
+port: 3000
+requestToken: asw9reh2938fyhewjj
+viewsPath: /project/packages/app_remote_tasks/nodejs_server/views
+managerService:
+  url: "2"
+  requestToken: "1"
+webpackStatsFilePath: /tmp/webpackStat.json
+sessionSecret: 1893ud2u9qfyh3r

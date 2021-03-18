@@ -1,0 +1,14 @@
+{
+  "name": "@softprovider-remote-tasks/app_remote_tasks__data_server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandru Prisacariu",
+  "license": "ISC",
+  "peerDependencies": {
+    "@aykelith/xalgenezis-expressjs-data": "^1.0.2"
+  }
+}

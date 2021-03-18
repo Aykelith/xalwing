@@ -1,0 +1,5 @@
+{
+    "serverIndex": "src/index.ts",
+    "restartIfPackagesChanged": [ ]
+}
+

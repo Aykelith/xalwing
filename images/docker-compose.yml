@@ -1,0 +1,28 @@
+version: '3'
+services:
+  app:
+    image: registry.gitlab.com/softprovider/dev_generic_typescript_app:latest
+    ports:
+      - "3001:443"
+    volumes:
+      - ..:/project
+    depends_on:
+      - "service_osc"
+    environment:
+      NODE_ENV: development
+      CONFIG_PATH: "/project/images/development/app_remote_tasks.config.yml"
+      GSP_HOT_RELOAD: /project/packages/app_remote_tasks/reactjs_web/webpack.config.ts
+      WEBPACK_CONFIG: /project/images/development/app_remote_tasks.webpack.config.json
+      PACKAGE_NAME: app_remote_tasks/nodejs_server
+    command: /bin/sh -c "envsubst '$$PACKAGE_NAME' < /site.template.conf > /etc/nginx/conf.d/site.conf && /start.sh"
+  service_osc:
+    image: registry.gitlab.com/softprovider/dev_generic_typescript_app:latest
+    ports:
+      - "3101:443"
+    volumes:
+      - ..:/project
+    environment:
+      NODE_ENV: development
+      CONFIG_PATH: "/project/images/development/service_manager.config.yml"
+      PACKAGE_NAME: service_manager
+    command: /bin/sh -c "envsubst '$$PACKAGE_NAME' < /site.template.conf > /etc/nginx/conf.d/site.conf && /start.sh"
